@@ -34,7 +34,7 @@ function drawBorder() {
 	var canvasHeight = ctx.canvas.height;
 	ctx.beginPath();
 	ctx.lineWidth ="10";
-	ctx.strokeStyle = "black";
+	ctx.strokeStyle = "brown";
 	ctx.rect(0,0, canvasWidth, canvasHeight);
 	ctx.stroke();
 }
@@ -55,4 +55,5 @@ function draw(e) {
 
   ctx.stroke(); // draw it!
 }
+drawBackground();
 drawBorder();

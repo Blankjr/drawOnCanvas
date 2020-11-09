@@ -4,14 +4,24 @@
     <link rel="stylesheet" href="styles.css"
   </head>
   <body>
+    <!--Canvas Element-->
+    <canvas id="canvas" width="640px" height="417px"></canvas>
 
-    <canvas id="canvas" width="500" height="500"></canvas>
 
-    <script type="text/javascript" src="html5-canvas-drawing-app.js"></script>
-    <script type="text/javascript" src="buttons.js">
 
+
+    <button type="button" name="clearButton" class="Clear" onclick=" clearDrawing()" >Löschen</button>
+    <div class="hidden">
+      <img id="background" src="./blackBoard.jpg" alt="", width="640px", height="417px">
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="buttons.js"></script>
+    <script src="autoDraw.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      drawBackground();
     </script>
-      <button type="button" name="clearButton" onclick=" clearDrawing()" >Löschen</button>
-      
+    <button type="button" name="clearButton" class="Background" onclick="drawBackground()">Hintergrund</button>
+
+
   </body>
 </html>
