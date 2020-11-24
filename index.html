@@ -9,12 +9,20 @@
 
 
 
-
+   
     <button type="button" name="clearButton" class="Clear" onclick=" clearDrawing()" >Löschen</button>
-    <img src="" alt="">
+    
     <div class="hidden">
       <img id="background" src="./images/blackBoard.jpg" alt="", width="640px", height="417px">
     </div>
+
+   <aside>
+      <img src="./images/brush-red.png" alt="" width="100px" height="100px" onclick="changeColor('#c0392b')">
+      <img src="./images/brush-white.png" alt="" width="100px" height="100px" onclick="changeColor('#FFFFFF')">
+      <img src="./images/brush-blue.png" alt="" width="100px" height="100px" onclick="changeColor('#0000e6')">
+      <img src="./images/brush-black.png"  alt=""  width="100px" height="100px" onclick="changeColor('#000000')">
+   </aside>
+    
     <script type="text/javascript" src="./scripts/main.js"></script>
     <script type="text/javascript" src="./scripts/buttons.js"></script>
     <script type="text/javascript" src="./scripts/autoDraw.js"></script>
