@@ -1,16 +1,17 @@
 .Clear{
   position: absolute;
-  top: 500px;
+  right: 0.05%;
+ bottom:  0.5%;
   background-color: red;
   color: white;
 }
-.Background{
+/*.background{
   position: absolute;
   top: 500px;
   left: 3%;
   background-color: red;
   color: white;
-}
+}*/
 .hidden {
   display: none;
 }

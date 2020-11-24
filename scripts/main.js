@@ -1,7 +1,8 @@
 let lineColor = '#c0392b';
 document.body.style.margin = 0;
 canvas.style.position = 'fixed';
-
+canvas.height = window.innerHeight - 10;
+canvas.width = window.innerWidth;
 // get canvas 2D context
 var ctx = canvas.getContext('2d');
 
