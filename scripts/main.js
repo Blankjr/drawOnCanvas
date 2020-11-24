@@ -2,7 +2,7 @@ let lineColor = '#c0392b';
 document.body.style.margin = 0;
 canvas.style.position = 'fixed';
 
-// get canvas 2D contexte
+// get canvas 2D context
 var ctx = canvas.getContext('2d');
 
 
