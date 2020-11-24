@@ -1,8 +1,10 @@
+let lineColor = '#c0392b';
 document.body.style.margin = 0;
 canvas.style.position = 'fixed';
 
 // get canvas 2D contexte
 var ctx = canvas.getContext('2d');
+
 
 
 // last known position
@@ -38,10 +40,13 @@ function draw(e) {
   ctx.lineWidth = 5;
   //rounded ends of line for appearance
   ctx.lineCap = 'round';
-  ctx.strokeStyle = '#c0392b';
+  ctx.strokeStyle = lineColor;
 
   ctx.moveTo(pos.x, pos.y); // from
   setPosition(e);
   ctx.lineTo(pos.x, pos.y); // to
   ctx.stroke(); // draw it NOW!
+}
+function changeColor(_newColor){
+  lineColor = _newColor;
 }
